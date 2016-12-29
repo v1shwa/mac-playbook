@@ -1,0 +1,57 @@
+---
+- include_vars:
+    file: brew_config.yml
+    name: brew
+
+- include_vars:
+    file: cask_config.yml
+    name: cask
+
+- name: Add custom Terminal profile.
+  shell: "xattr -c roles/mac/files/Solarized-Dark-xterm-256color.terminal; open roles/mac/files/Solarized-Dark-xterm-256color.terminal"
+
+- name: Check If Homebrew is Installed
+  stat: 
+    path: /usr/local/bin/brew
+  register: is_brew_installed
+
+- name: Install Homebrew
+  shell: /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  when: is_brew_installed.stat.exists == False
+
+- name: Update Homebrew
+  homebrew: 
+    update_homebrew: yes
+
+- name: Configure Taps
+  homebrew_tap:
+    name: "{{ item }}"
+    state: present
+  with_items: "{{ brew.taps }}"
+
+- name: Get list of Installed Brew packages
+  command: brew list
+  register: brew_list
+
+- name: Install brew packages
+  homebrew: 
+    name: "{{ item }}"
+    state: present
+  with_items: "{{ brew.packages }}"
+  when: brew_list.stdout == "" or "'{{ item }}' not in {{ brew_list.stdout }}"
+
+- name: Get list of Installed Cask packages
+  command: brew cask list
+  register: cask_list
+
+- name: Install Cask packages
+  homebrew_cask: 
+    name: "{{ item }}"
+    state: present
+    install_options: "appdir={{ cask.install_directory }}"
+  with_items: "{{ cask.packages }}"
+  when: cask_list.stdout == "" or "'{{ item }}' not in {{ cask_list.stdout }}"
+
+
+
+

@@ -1,0 +1,28 @@
+---
+taps:
+  - homebrew/core
+  - caskroom/cask
+  - caskroom/versions
+  - caskroom/fonts
+
+packages:
+  - python
+  - vim
+  - git
+  - wget
+  - cmake
+  - gpg
+  - libevent
+  - cowsay
+  - tree
+  - htop
+  - thefuck
+  - openssl
+  - zsh
+  - zsh-completions
+  - tmux
+  - zsh-syntax-highlighting
+  - heroku
+  - jq
+  - fortune
+  - sl

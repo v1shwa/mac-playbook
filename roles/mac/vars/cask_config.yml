@@ -1,0 +1,26 @@
+---
+install_directory: /Applications
+packages:
+  - caffeine
+  - box-sync
+  - dropbox
+  - google-chrome
+  - virtualbox
+  - vagrant
+  - spotify
+  - sublime-text
+  - skype
+  - spectacle
+  - vlc
+  - sequel-pro
+  - textmate
+  - java
+  - intellij-idea-ce
+  - karabiner-elements
+  - font-firacode-nerd-font
+  - font-roboto
+  - font-source-code-pro
+  - font-roboto-mono-for-powerline
+  - iterm2
+  - docker
+  - transmit
