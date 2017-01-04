@@ -13,11 +13,11 @@ echo "Configuring your dev environment..Look out for the fast-moving train.."
 if ! xcode-select --install 2>&1 | grep installed; then
 
     # Wait for xcode to install
-    echo -n "Waiting for Xcode cli tools to install."
+    echo -n "Waiting for Commandline Dev tools to install."
     while true
     do
         if xcode-select --install 2>&1 | grep installed; then
-            echo "Xcode cli tools Installed successfully!"
+            echo "Commandline dev tools is installed successfully.. Moving on.."
             break
         fi
         echo -n "."
