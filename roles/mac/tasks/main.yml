@@ -8,7 +8,7 @@
     name: cask
 
 - name: Add custom Terminal profile.
-  shell: "xattr -c roles/mac/files/Solarized-Dark-xterm-256color.terminal; open roles/mac/files/Solarized-Dark-xterm-256color.terminal"
+  shell: xattr -c {{terminal_profile_path}}; open {{terminal_profile_path}}
 
 - name: Check If Homebrew is Installed
   stat: 
