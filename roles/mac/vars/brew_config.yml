@@ -29,3 +29,4 @@ packages:
   - python3
   - freetype
   - pkg-config
+  - unrar
