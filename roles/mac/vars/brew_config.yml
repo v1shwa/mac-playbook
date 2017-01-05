@@ -27,3 +27,5 @@ packages:
   - fortune
   - sl
   - python3
+  - freetype
+  - pkg-config
