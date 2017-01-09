@@ -7,7 +7,7 @@ function is_installed {
   echo "$result_"
 }
 
-echo "Configuring your dev environment..Look out for the fast-moving train.."
+echo "Configuring your dev environment.. Sit tight!"
 
 # Install X-code, if not
 if ! xcode-select --install 2>&1 | grep installed; then
@@ -39,7 +39,6 @@ fi
 ansible-playbook ./playbook.yml -i ./hosts --ask-become-pass
 
 # Done
-sl
 echo "Done. Here's some cheesy words for you."
 fortune | cowsay -f cheese
 
