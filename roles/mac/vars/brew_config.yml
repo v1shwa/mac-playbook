@@ -30,3 +30,4 @@ packages:
   - freetype
   - pkg-config
   - unrar
+  - tomcat
