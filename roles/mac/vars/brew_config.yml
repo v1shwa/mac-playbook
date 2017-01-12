@@ -31,3 +31,4 @@ packages:
   - pkg-config
   - unrar
   - tomcat
+  - maven
