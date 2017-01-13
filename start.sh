@@ -14,12 +14,12 @@ xcode_dir=$(/usr/bin/xcode-select -print-path 2>/dev/null)
 
 if ! [ -d "$xcode_dir" ]; then
     echo "Command Line Tools is missing. Attempting to install.."
-    xcode-select --install
+    xcode-select --install > /dev/null 2>&1
     # Wait for xcode to install
     echo -n "Waiting for Commandline tools to install."
     while true
     do
-        if ! [ -d "$xcode_dir" ]; then
+        if xcode-select --install 2>&1 | grep installed; then
             echo "Command Line Tools is installed successfully"
             break
         fi
