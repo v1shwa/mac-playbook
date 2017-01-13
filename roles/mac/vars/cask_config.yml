@@ -25,4 +25,4 @@ packages:
   - transmit
   - rescuetime
   - eclipse-jee
-  - googleappengine
+  - google-cloud-sdk
