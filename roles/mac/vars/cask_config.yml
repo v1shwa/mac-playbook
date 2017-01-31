@@ -27,3 +27,4 @@ packages:
   - eclipse-jee
   - google-cloud-sdk
   - numi
+  - slack
