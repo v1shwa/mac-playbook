@@ -44,6 +44,6 @@ fi
 ansible-playbook ./playbook.yml -i ./hosts  --ask-become-pass
 
 # Done
-echo "Done. Here's some cheesy words for you."
+echo "Done."
 fortune | cowsay -f cheese
 

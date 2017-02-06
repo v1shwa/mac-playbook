@@ -28,3 +28,4 @@ packages:
   - google-cloud-sdk
   - numi
   - slack
+  - quicklook-csv
