@@ -27,3 +27,4 @@ packages:
   - google-cloud-sdk
   - numi
   - slack
+  - android-studio
