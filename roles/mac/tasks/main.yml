@@ -52,7 +52,7 @@
 - name: Uninstall removed Cask packages
   homebrew_cask: 
     name: "{{ item }}"
-    state: present
+    state: absent
     install_options: "appdir={{ cask.install_directory }}"
   with_items: "{{ cask_list.stdout_lines }}"
   when: "'{{ item }}' not in '{{ cask.packages|join(',') }}'"
