@@ -32,3 +32,4 @@ packages:
   - unrar
   - tomcat
   - maven
+  - mongodb
