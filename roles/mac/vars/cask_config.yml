@@ -23,8 +23,9 @@ packages:
   - iterm2
   - docker
   - rescuetime
-  - eclipse-jee
+  - eclipse-java
   - google-cloud-sdk
   - numi
   - slack
   - android-studio
+  - robomongo

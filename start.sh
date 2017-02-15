@@ -41,7 +41,7 @@ if [[ $(is_installed ansible) -eq 0 ]]; then
 fi
 
 # Run playbook
-ansible-playbook ./playbook.yml -i ./hosts  --ask-become-pass
+ansible-playbook ./playbook.yml -i ./hosts  --ask-become-pass 
 
 # Done
 echo "Done."
