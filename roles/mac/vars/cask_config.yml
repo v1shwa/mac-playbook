@@ -21,7 +21,7 @@ packages:
   - font-source-code-pro
   - font-roboto-mono-for-powerline
   - iterm2
-  - docker
+  - docker-toolbox
   - rescuetime
   - eclipse-java
   - google-cloud-sdk
@@ -29,3 +29,6 @@ packages:
   - slack
   - android-studio
   - robomongo
+  - github-desktop
+  - postman
+  - hyper
