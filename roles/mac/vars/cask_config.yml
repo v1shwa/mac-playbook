@@ -29,6 +29,5 @@ packages:
   - slack
   - android-studio
   - robomongo
-  - github-desktop
   - postman
   - hyper
