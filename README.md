@@ -1,6 +1,5 @@
-Ansible Playbook for Mac
-[![Build Status](https://travis-ci.org/v1shwa/mac-playbook.svg?branch=master)](https://travis-ci.org/v1shwa/mac-playbook)
----
+## Ansible Playbook for Mac   [![Build Status](https://travis-ci.org/v1shwa/mac-playbook.svg?branch=master)](https://travis-ci.org/v1shwa/mac-playbook)
+
 __Note__: _This project is still under development. Proceed with caution_
 
 #### Instructions:
