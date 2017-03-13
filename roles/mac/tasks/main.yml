@@ -10,6 +10,7 @@
 - name: Check if custom Terminal profile is installed
   command: osascript -e 'tell app "Terminal" to set current settings of front window to settings set "{{terminal_profile_name}}"'
   register: term_prof_stat
+  ignore_errors: True
 
 - name: Add custom Terminal profile.
   shell: xattr -c {{terminal_profile_path}}; open {{terminal_profile_path}}
