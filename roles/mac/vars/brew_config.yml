@@ -4,6 +4,7 @@ taps:
   - caskroom/cask
   - caskroom/versions
   - caskroom/fonts
+  - homebrew/science
 
 packages:
   - python
@@ -33,3 +34,4 @@ packages:
   - tomcat
   - maven
   - lua
+  - r
