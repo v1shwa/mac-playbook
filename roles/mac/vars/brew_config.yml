@@ -34,4 +34,4 @@ packages:
   - tomcat
   - maven
   - lua
-  - r
+  - portaudio
