@@ -35,4 +35,3 @@ packages:
   - maven
   - lua
   - portaudio
-  - ffmpeg
