@@ -22,8 +22,6 @@ packages:
   - font-roboto-mono-for-powerline
   - iterm2
   - docker-toolbox
-  - rescuetime
-  - eclipse-java
   - google-cloud-sdk
   - numi
   - slack
