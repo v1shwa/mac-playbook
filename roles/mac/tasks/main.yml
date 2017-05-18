@@ -35,7 +35,7 @@
     name: ["{{ item }}"]
     state: present
   with_items: "{{ brew.packages }}"
-  when: brew_list.stdout == "" or "'{{ item }}' not in {{ brew_list.stdout }}"
+  when: brew_list.stdout.find(item) == -1
 
 - name: Get list of Installed Cask packages
   command: brew cask list
