@@ -40,8 +40,15 @@ if [[ $(is_installed ansible) -eq 0 ]]; then
     sudo pip install ansible
 fi
 
+# check is cl-args exists
+ansible_add_tags=""
+if [[ $# -ne 0 ]]
+    then
+        ansible_add_tags="--tags $1"
+fi
+
 # Run playbook
-ansible-playbook ./playbook.yml -i ./hosts  --ask-become-pass 
+ansible-playbook ./playbook.yml -i ./hosts $ansible_add_tags --ask-become-pass 
 
 # Done
 echo "Done."
