@@ -2,33 +2,49 @@
 - include_vars:
     file: brew_config.yml
     name: brew
+  tags:
+    - brew
 
 - include_vars:
     file: cask_config.yml
     name: cask
+  tags:
+    - cask
 
 - name: Check If Homebrew is Installed
   stat: 
     path: /usr/local/bin/brew
   register: is_brew_installed
+  tags:
+    - init
 
 - name: Install Homebrew
   shell: /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
   when: is_brew_installed.stat.exists == False
+  tags:
+    - init
 
 - name: Update Homebrew
   homebrew: 
     update_homebrew: yes
+  tags:
+    - init
+    - brew
+    - cask
 
 - name: Configure Taps
   homebrew_tap:
     name: "{{ item }}"
     state: present
   with_items: "{{ brew.taps }}"
+  tags:
+    - taps
 
 - name: Get list of Installed Brew packages
   command: brew list
   register: brew_list
+  tags:
+    - brew
 
 - name: Install brew packages
   homebrew: 
@@ -36,10 +52,14 @@
     state: present
   with_items: "{{ brew.packages }}"
   when: brew_list.stdout.find(item) == -1
+  tags:
+    - brew
 
 - name: Get list of Installed Cask packages
   command: brew cask list
   register: cask_list
+  tags:
+    - cask
 
 - name: Uninstall removed Cask packages
   homebrew_cask: 
@@ -48,6 +68,8 @@
     install_options: "appdir={{ cask.install_directory }}"
   with_items: "{{ cask_list.stdout_lines }}"
   when: "'{{ item }}' not in '{{ cask.packages|join(',') }}'"
+  tags:
+    - cask
 
 - name: Install new Cask packages
   homebrew_cask: 
@@ -56,6 +78,8 @@
     install_options: "appdir={{ cask.install_directory }}"
   with_items: "{{ cask.packages }}"
   when: cask_list.stdout == "" or "'{{ item }}' not in {{ cask_list.stdout }}"
+  tags:
+    - cask
 
 
 
