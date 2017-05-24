@@ -2,8 +2,8 @@
 install_directory: /Applications
 packages:
   - caffeine
-  - box-sync
-  - dropbox
+  # - box-sync # BOX SUCKS. Heavy CPU consumption, slow syncing, probably poor indexing of files.
+  - dropbox # Dropbox, FTW
   - google-chrome
   - virtualbox
   - vagrant
@@ -31,5 +31,3 @@ packages:
   - hyper
   - opera
   - lastpass
-  - toggldesktop
-

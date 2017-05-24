@@ -28,9 +28,7 @@
   homebrew: 
     update_homebrew: yes
   tags:
-    - init
-    - brew
-    - cask
+    - update_cache
 
 - name: Configure Taps
   homebrew_tap:
@@ -38,7 +36,7 @@
     state: present
   with_items: "{{ brew.taps }}"
   tags:
-    - taps
+    - update_cache
 
 - name: Get list of Installed Brew packages
   command: brew list
