@@ -20,6 +20,7 @@ packages:
   - font-roboto
   - font-source-code-pro
   - font-roboto-mono-for-powerline
+  - font-nunito
   - iterm2
   - docker-toolbox
   - google-cloud-sdk
