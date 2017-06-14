@@ -12,6 +12,7 @@ packages:
   - git
   - wget
   - cmake
+  - coreutils
   - gpg
   - libevent
   - cowsay
