@@ -37,3 +37,4 @@ packages:
   - lua
   - portaudio
   - lolcat
+  - graphviz
