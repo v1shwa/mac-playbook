@@ -36,6 +36,6 @@ packages:
   - protege
   - powerprep
   - typora
-  - kindle
   - kindlegen
   - pycharm
+  - calibre
