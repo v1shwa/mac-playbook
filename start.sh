@@ -7,7 +7,7 @@ function is_installed {
   echo "$result_"
 }
 
-echo "Configuring your dev environment.. Sit tight!"
+echo "Configuring your dev environment..!"
 
 # Install X-code, if not
 xcode_dir=$(/usr/bin/xcode-select -print-path 2>/dev/null)

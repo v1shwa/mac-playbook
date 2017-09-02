@@ -23,6 +23,7 @@ packages:
   - zsh
   - zsh-completions
   - tmux
+  - reattach-to-user-namespace
   - zsh-syntax-highlighting
   - heroku
   - jq

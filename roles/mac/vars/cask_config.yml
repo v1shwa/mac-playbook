@@ -2,12 +2,12 @@
 install_directory: /Applications
 packages:
   - caffeine
-  # - box-sync # BOX SUCKS. Heavy CPU consumption, slow syncing, probably poor indexing of files.
   - dropbox # Dropbox, FTW
   - google-chrome
+  - spotify
+  - iterm2
   - virtualbox
   - vagrant
-  - spotify
   - sublime-text
   - skype
   - spectacle
@@ -17,12 +17,10 @@ packages:
   - java
   - intellij-idea
   - font-firacode-nerd-font
-  - font-roboto
   - font-source-code-pro
   - font-roboto-mono-for-powerline
   - font-nunito
   - font-hack
-  - iterm2
   - docker-toolbox
   - google-cloud-sdk
   - numi
@@ -34,10 +32,8 @@ packages:
   - opera
   - lastpass
   - iina
-  - protege
-  - powerprep
-  - typora
-  - pycharm
   - evernote
   - mactex
   - marp
+  - appcleaner
+  - nosleep
