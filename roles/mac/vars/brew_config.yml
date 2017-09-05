@@ -39,3 +39,4 @@ packages:
   - portaudio
   - lolcat
   - graphviz
+  - boost
