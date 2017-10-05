@@ -14,8 +14,8 @@ Ansible playbook to download, install & configure almost all the software I use 
 - This bash script will ensure you have commandline tools, pip & ansible installed and then runs actual playbook to install all the required applications. 
 
 
-#### Inspiration:
+#### Inspiration
 _Jeff Geerling's [repo](https://github.com/geerlingguy/mac-dev-playbook)_
 
-#### License:
+#### License
 [MIT](https://github.com/v1shwa/mac-playbook/blob/master/LICENSE)

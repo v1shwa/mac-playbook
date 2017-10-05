@@ -8,6 +8,7 @@ function is_installed {
 }
 
 echo "Configuring your dev environment..!"
+echo "You'll be prompted for the sudo password now, please enter.."
 
 # Install X-code, if not
 xcode_dir=$(/usr/bin/xcode-select -print-path 2>/dev/null)
@@ -51,6 +52,6 @@ fi
 ansible-playbook ./playbook.yml -i ./hosts $ansible_add_tags --ask-become-pass 
 
 # Done
-echo "Done."
 fortune | cowsay -f cheese | lolcat
+echo "Done."
 

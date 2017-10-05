@@ -28,7 +28,7 @@ packages:
   - heroku
   - jq
   - fortune
-  - sl
+  - watch
   - python3
   - freetype
   - pkg-config
@@ -40,3 +40,4 @@ packages:
   - lolcat
   - graphviz
   - boost
+  - boost-python
