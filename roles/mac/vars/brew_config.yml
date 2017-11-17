@@ -41,3 +41,4 @@ packages:
   - graphviz
   - boost
   - boost-python
+  - plowshare
