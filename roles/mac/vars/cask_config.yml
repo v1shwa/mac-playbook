@@ -29,6 +29,7 @@ packages:
   - robomongo
   - postman
   - hyper
+  - firefox
   - opera
   - lastpass
   - iina
@@ -42,3 +43,4 @@ packages:
   - font-lora
   - bitbar
   - visual-studio-code
+  - xquartz
