@@ -52,6 +52,5 @@ fi
 ansible-playbook ./playbook.yml -i ./hosts $ansible_add_tags --ask-become-pass 
 
 # Done
-fortune | cowsay -f cheese | lolcat
-echo "Done."
+echo "All done.." | cowsay -f cheese
 

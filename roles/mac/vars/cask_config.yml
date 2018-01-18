@@ -3,7 +3,7 @@ install_directory: /Applications
 packages:
   - caffeine
   - dropbox # Dropbox, FTW
-  - google-chrome
+  - firefox
   - spotify
   - iterm2
   - virtualbox
@@ -21,6 +21,7 @@ packages:
   - font-roboto-mono-for-powerline
   - font-nunito
   - font-hack
+  - font-lora
   - docker-toolbox
   - google-cloud-sdk
   - numi
@@ -29,8 +30,8 @@ packages:
   - robomongo
   - postman
   - hyper
-  - firefox
   - opera
+  - google-chrome
   - lastpass
   - iina
   - evernote
@@ -40,7 +41,6 @@ packages:
   - appcleaner
   - nosleep
   - pycharm
-  - font-lora
   - bitbar
   - visual-studio-code
   - xquartz
