@@ -50,7 +50,7 @@ fi
 
 # Run playbook
 # ansible-playbook ./playbook.yml -i ./hosts $ansible_add_tags --ask-become-pass 
-if [[ -v $TRAVIS ]]; then
+if [ "$TRAVIS" = true ] ; then
     ansible-playbook ./playbook.yml -i ./hosts $ansible_add_tags
 else
     ansible-playbook ./playbook.yml -i ./hosts $ansible_add_tags --ask-become-pass 
