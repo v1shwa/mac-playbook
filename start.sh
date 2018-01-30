@@ -49,7 +49,12 @@ if [[ $# -ne 0 ]]
 fi
 
 # Run playbook
-ansible-playbook ./playbook.yml -i ./hosts $ansible_add_tags --ask-become-pass 
+# ansible-playbook ./playbook.yml -i ./hosts $ansible_add_tags --ask-become-pass 
+if [[ -v $TRAVIS ]]; then
+    ansible-playbook ./playbook.yml -i ./hosts $ansible_add_tags
+else
+    ansible-playbook ./playbook.yml -i ./hosts $ansible_add_tags --ask-become-pass 
+fi
 
 # Done
 echo "All done.." | cowsay -f cheese
