@@ -57,5 +57,5 @@ else
 fi
 
 # Done
-echo "All done.." | cowsay -f cheese
+echo "All done.." | cowsay -f cheese | lolcat
 
