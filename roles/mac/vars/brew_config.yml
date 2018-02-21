@@ -4,7 +4,6 @@ taps:
   - caskroom/cask
   - caskroom/versions
   - caskroom/fonts
-  - homebrew/science
 
 packages:
   - python
