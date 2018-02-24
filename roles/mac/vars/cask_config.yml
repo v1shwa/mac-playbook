@@ -22,7 +22,7 @@ packages:
   - font-nunito
   - font-hack
   - font-lora
-  - docker-toolbox
+  - docker
   - google-cloud-sdk
   - numi
   - slack
@@ -34,6 +34,7 @@ packages:
   - google-chrome
   - lastpass
   - iina
+  - musixmatch
   - evernote
   - mactex
   - marp
