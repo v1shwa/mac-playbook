@@ -23,6 +23,7 @@ packages:
   - font-hack
   - font-lora
   - docker
+  - docker-toolbox
   - google-cloud-sdk
   - numi
   - slack

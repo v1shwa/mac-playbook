@@ -42,3 +42,6 @@ packages:
   - boost-python
   - rust
   - git-lfs
+  - megatools
+  - aria2
+  - trash
