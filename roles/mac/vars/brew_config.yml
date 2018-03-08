@@ -28,7 +28,7 @@ packages:
   - jq
   - fortune
   - watch
-  - python3
+  - python2
   - freetype
   - pkg-config
   - unrar
