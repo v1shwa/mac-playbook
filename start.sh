@@ -41,7 +41,7 @@ if [[ $(is_installed ansible) -eq 0 ]]; then
     sudo pip install ansible
 fi
 
-# check is cl-args exists
+# check is cl-args exists.
 ansible_add_tags=""
 if [[ $# -ne 0 ]]
     then
