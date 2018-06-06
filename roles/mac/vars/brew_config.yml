@@ -45,4 +45,8 @@ packages:
   - megatools
   - aria2
   - trash
-  - hub
+  - pipenv
+  - m-cli
+  - ccat
+  - tldr
+  
