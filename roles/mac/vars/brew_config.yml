@@ -49,4 +49,5 @@ packages:
   - m-cli
   - ccat
   - tldr
+  - awscli
   
