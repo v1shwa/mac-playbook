@@ -50,4 +50,5 @@ packages:
   - ccat
   - tldr
   - awscli
+  - freetds
   
